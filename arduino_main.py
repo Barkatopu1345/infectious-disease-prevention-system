@@ -11,7 +11,7 @@ def voiceCommand():
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[1].id)
 
-    x = '5'
+    x = '10'
     while x!='0':
         with sr.Microphone() as source:
 

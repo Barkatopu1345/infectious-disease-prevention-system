@@ -32,7 +32,7 @@ def maskMain():
 
     while True:
         flag, img = capture.read()
-        #img = cv2.imread('self.jpg')
+
         if flag:
             faces = haar_data.detectMultiScale(img)
             for x,y,w,h in faces:
@@ -41,7 +41,7 @@ def maskMain():
                 face = cv2.resize(face,(50,50))
                 face = face.reshape(1,-1)
                 face = pca.transform(face)
-                #pred = svm.predict(face)
+
                 n = 'No mask'
                 n = names[int(svm.predict(face))]
                 A= (x, y + h + 50)
