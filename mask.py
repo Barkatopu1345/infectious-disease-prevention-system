@@ -1,5 +1,4 @@
 import cv2
-import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
@@ -57,6 +56,5 @@ def maskMain():
                 break
     capture.release()
     cv2.destroyAllWindows()
-
 # Problem : we have 3parts .. 1. nose 2. mouth 3. chin .... if we can'f find out any one then we say you are waring mask. otherwise our program will say that we are not waring mask.
 # we have to set up this program on high light. otherwise it will give some error on low light.

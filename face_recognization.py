@@ -1,12 +1,11 @@
 import cv2
 import numpy as np
 import face_recognition
-import os
 import time
+import os
 from datetime import datetime
 import openpyxl
 from openpyxl.styles import PatternFill, Border, Side, Alignment, Protection, Font, NamedStyle
-import pandas as pd
 from pathlib import Path
 
 
